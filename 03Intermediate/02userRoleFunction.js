@@ -13,20 +13,20 @@ function getUserRole(name, role){
     switch (role) {
         case "admin":
             return `${name} is a admin with all access`
-            break; //it is unnecessary when using return
+            //break; //it is unnecessary when using return
         case "subadmin":
             return `${name} is a subadmin with access to create/delete courses`
-            break;
+            //break;
             case "testprep":
             return `${name} is a testprep with access to create/delete tests`
-            break;
+            //break;
             case "student":
             return `${name} is a student with access to consume content`
-            break;
+            //break;
     
         default:
             return `${name} is a trial user`
-            break;
+            //break;
     }
 }
 

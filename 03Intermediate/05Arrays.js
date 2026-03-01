@@ -7,7 +7,7 @@ var states = new Array("Assam","Telangana","Mumbai","Kerala","Delhi");
 
 //console.log(countries[1].length);
 
-states[0] = "Rajastan";
+states[0] = "Rajastan"; //replaces the element with the given index.
 
 //console.log(states);
 

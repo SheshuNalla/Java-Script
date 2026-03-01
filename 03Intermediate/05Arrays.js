@@ -14,14 +14,14 @@ states[0] = "Rajastan";
 var user = ["Sheshu",3,23,true];
 console.log(user);
 
-user.pop();//removes a value at end of the array
+user.pop();//removes an element at end of the array
 
-user.unshift("Rollno18");//adds a value at start of the array
+user.unshift("Rollno18");//adds an element at start of the array
 console.log(user);
-user.shift();//removes a value at start of the array
+user.shift();//removes an element at start of the array
 console.log(user);
 
-user.push("sheshu");//adds a new value at the end of the array
+user.push("sheshu");//adds a new element at the end of the array
 console.log(user);
 
 console.log(user.indexOf(3));//finds the index of the given element.

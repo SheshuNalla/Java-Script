@@ -13,28 +13,33 @@ body{
     height: 30px;
     width: 130px;
     margin: 10px;
+    border: 1px solid white;
 }
 .color-cyan{
     background-color: cyan;
     height: 30px;
     width: 130px;
     margin: 10px;
+    border: 1px solid white;
 }
 .color-violet{
     background-color: violet;
     height: 30px;
     width: 130px;
     margin: 10px;
+    border: 1px solid white;
 }
 .color-orange{
     background-color: orange;
     height: 30px;
     width: 130px;
     margin: 10px;
+    border: 1px solid white;
 }
 .color-pink{
     background-color: pink;
     height: 30px;
     width: 130px;
     margin: 10px;
+    border: 1px solid white;
 }

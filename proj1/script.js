@@ -16,8 +16,21 @@ setTimeout( () => {
 },4700);
 
 
-// function increment(){
-//     count++;
-//     counter.innerHTML = count;
-// }
+// Counter App with Increment, Decrement and Reset Buttons.
+
+
+    // function increment(){
+    //     count++;
+    //     counter.innerHTML = count;
+    // }
+
+    // let decrement = () => {
+    //     count--;
+    //     counter.innerHTML = count;
+    // }
+
+    // let reset = () =>{
+    //     count = 0;
+    //     counter.innerHTML = count;
+    // }
 

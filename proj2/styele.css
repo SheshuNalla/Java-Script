@@ -1,0 +1,40 @@
+body{
+    background-color: grey;
+}
+
+.color-hover{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.color-red{
+    background-color: red;
+    height: 30px;
+    width: 130px;
+    margin: 10px;
+}
+.color-cyan{
+    background-color: cyan;
+    height: 30px;
+    width: 130px;
+    margin: 10px;
+}
+.color-violet{
+    background-color: violet;
+    height: 30px;
+    width: 130px;
+    margin: 10px;
+}
+.color-orange{
+    background-color: orange;
+    height: 30px;
+    width: 130px;
+    margin: 10px;
+}
+.color-pink{
+    background-color: pink;
+    height: 30px;
+    width: 130px;
+    margin: 10px;
+}

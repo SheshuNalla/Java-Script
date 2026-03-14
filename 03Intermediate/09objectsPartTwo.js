@@ -20,6 +20,7 @@ user.buyCourse("Python Full stack");
 user.buyCourse("Java Full stack");
 
 console.log(user.info());
+console.log(user.courseList);
 
 //console.log(user.courseList);
 //console.log(user.courseCount());

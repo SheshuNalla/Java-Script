@@ -1,7 +1,8 @@
-var User = function(firstName, lastName, courseCount){   //Creating objects with the functional approach called "Constructor".
+var User = function(firstName, lastName, courseCount, age){   //Creating objects with the functional approach called "Constructor".
     this.firstName = firstName;
     this.lastName = lastName;
     this.courseCount = courseCount;
+    this.age = age
     this.getCourseCount = function(){
         console.log(`Course count is: ${courseCount}`);
     }
@@ -11,13 +12,19 @@ User.prototype.getFirstname = function(){           // we can add more methods, 
     console.log(`Your Firstname is: ${this.firstName}`);
 }
 
-var sheshu = new User("sheshu", "Nalla", 3);  // everytime we use "new" keyword it creates a new objects reference to the "User" constructor.
+User.prototype.getAge = function(){             // Added another Method getAge()
+    console.log(`User ${this.lastName} ${this.firstName}'s age is: ${this.age}`);
+}
+
+var sheshu = new User("sheshu", "Nalla", 3, 23);  // everytime we use "new" keyword it creates a new objects reference to the "User" constructor.
 // console.log(sheshu);
-sheshu.getCourseCount();
-sheshu.getFirstname();
+// sheshu.getCourseCount();
+// sheshu.getFirstname();
+sheshu.getAge();
 
 
-var sai = new User("sai", "u", 8);
+var sai = new User("sai", "U", 8, 24);
 // console.log(sai);
-sai.getCourseCount();
-sai.getFirstname();
+// sai.getCourseCount();
+// sai.getFirstname();
+sai.getAge();

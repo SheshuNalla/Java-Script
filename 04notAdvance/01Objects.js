@@ -1,17 +1,15 @@
-var User = function (firstName, lastName, courseCount){
+var User = function(firstName, lastName, courseCount){
     this.firstName = firstName;
     this.lastName = lastName;
     this.courseCount = courseCount;
+    this.getCourseCount = function(){
+        console.log(`Course count is: ${courseCount}`);
+    }
 }
 
-console.log(typeof(User));
-var sheshu = new User("Sheshu", "Nalla", 4);
+var sheshu = new User("sheshu", "Nalla", 3);
 
 console.log(sheshu);
 
-var sai = new User("sai","U", 5);
+var sai = new User("sai", "u", 3);
 console.log(sai);
-
-
-
-// console.log(sheshu);

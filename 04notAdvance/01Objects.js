@@ -17,11 +17,12 @@ User.prototype.getAge = function(){             // Added another Method getAge()
 }
 
 var sheshu = new User("sheshu", "Nalla", 3, 23);  // everytime we use "new" keyword it creates a new objects reference to the "User" constructor.
-// console.log(sheshu);
-sheshu.getCourseCount();
+// // console.log(sheshu);
+// sheshu.getCourseCount();
 
-if (sheshu.hasOwnProperty("firstName")){
+if (sheshu.hasOwnProperty("firstName", "age")){
     sheshu.getFirstname();
+    sheshu.getAge();
 }
 
 
@@ -30,10 +31,19 @@ if (sheshu.hasOwnProperty("firstName")){
 
 var sai = new User("sai", "U", 8, 24);
 // console.log(sai);
-sai.getCourseCount();
+// sai.getCourseCount();
 
-if (sai.hasOwnProperty("firstName")){
+if (sai.hasOwnProperty("firstName", "age")){
     sai.getFirstname();
+    sai.getAge();
+
 }
 // sai.getFirstname();
 //sai.getAge();
+
+var akhilesh = new User("akhilesh", "P", 5, 23);
+
+if (sai.hasOwnProperty("firstName", "age")){
+    sai.getFirstname();
+    sai.getAge();
+}

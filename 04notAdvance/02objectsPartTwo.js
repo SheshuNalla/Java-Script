@@ -11,9 +11,16 @@ sheshu.name = "sheshu";
 sheshu.getUserName();
 
 
-var sheshu = Object.create(User, {        
-    name : {value: "Usai"}
+// var sheshu = Object.create(User, {        
+//     name : {value: "Usai"}
+// });
+
+// sheshu.getUserName();
+
+var sai = Object.create(User, {
+    name: {value: "Sai Krishna"}
 });
 
-sheshu.getUserName();
+// sai.name = "Sai Krishna";
+sai.getUserName();
 

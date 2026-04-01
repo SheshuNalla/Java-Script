@@ -9,7 +9,7 @@ var User = function(firstName, lastName, courseCount, age){   //Creating objects
 }
 
 User.prototype.getFirstname = function(){           // we can add more methods, properties by accessing "prototype" property.
-    console.log(`Your Firstname is: ${this.firstName}`);
+    console.log(`User's Firstname is: ${this.firstName}`);
 }
 
 User.prototype.getAge = function(){             // Added another Method getAge()
@@ -20,8 +20,10 @@ var sheshu = new User("sheshu", "Nalla", 3, 23);  // everytime we use "new" keyw
 // // console.log(sheshu);
 // sheshu.getCourseCount();
 
-if (sheshu.hasOwnProperty("firstName", "age")){
+if (sheshu.hasOwnProperty("firstName")){
     sheshu.getFirstname();
+}
+if (sheshu.hasOwnProperty("age")){
     sheshu.getAge();
 }
 
@@ -43,7 +45,7 @@ if (sai.hasOwnProperty("firstName", "age")){
 
 var akhilesh = new User("akhilesh", "P", 5, 23);
 
-if (sai.hasOwnProperty("firstName", "age")){
-    sai.getFirstname();
-    sai.getAge();
+if (akhilesh.hasOwnProperty("firstName", "age")){
+    akhilesh.getFirstname();
+    akhilesh.getAge();
 }

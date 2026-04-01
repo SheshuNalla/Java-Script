@@ -30,6 +30,6 @@ var sai = Object.create(User, {
 
 // sai.name = "Sai Krishna";
 sai.getUserName();
-console.log(sai);
+
 
 

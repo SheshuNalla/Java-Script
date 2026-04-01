@@ -17,10 +17,19 @@ sheshu.getUserName();
 
 // sheshu.getUserName();
 
+// var sai = Object.create(User, {
+//     name: {value: "Sai Krishna"},
+//     age: {value: 25}
+// });
+
 var sai = Object.create(User, {
-    name: {value: "Sai Krishna"}
-});
+    name : {value: "saikrishna"},
+    age : {value: 23}
+})
+
 
 // sai.name = "Sai Krishna";
 sai.getUserName();
+console.log(sai);
+
 

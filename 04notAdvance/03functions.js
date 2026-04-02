@@ -1,5 +1,5 @@
 (function(){
-    console.log("hai hello");
+    console.log("hai hello");   //Self-Executing Anonymous Function.
 })();
 
 (() => {

@@ -1,8 +1,7 @@
-var User = function(firstName, lastName, courseCount, age){   //Creating objects with the functional approach called "Constructor".
+var User = function(firstName, lastName, courseCount){   //Creating objects with the functional approach called "Constructor".
     this.firstName = firstName;
     this.lastName = lastName;
     this.courseCount = courseCount;
-    this.age = age
     this.getCourseCount = function(){
         console.log(`Course count is: ${courseCount}`);
     }
@@ -12,40 +11,30 @@ User.prototype.getFirstname = function(){           // we can add more methods, 
     console.log(`User's Firstname is: ${this.firstName}`);
 }
 
-User.prototype.getAge = function(){             // Added another Method getAge()
-    console.log(`User ${this.lastName} ${this.firstName}'s age is: ${this.age}`);
-}
 
-var sheshu = new User("sheshu", "Nalla", 3, 23);  // everytime we use "new" keyword it creates a new objects reference to the "User" constructor.
-// // console.log(sheshu);
-// sheshu.getCourseCount();
+var sheshu = new User("sheshu", "Nalla", 3);  // everytime we use "new" keyword it creates a new objects reference to the "User" constructor.
+console.log(sheshu);
+
+//sheshu.getFirstname();
 
 if (sheshu.hasOwnProperty("firstName")){
     sheshu.getFirstname();
 }
-if (sheshu.hasOwnProperty("age")){
-    sheshu.getAge();
-}
+sheshu.getCourseCount();
 
 
-//sheshu.getAge();
+var sai = new User("sai", "U", 8);
 
-
-var sai = new User("sai", "U", 8, 24);
-// console.log(sai);
-// sai.getCourseCount();
-
-if (sai.hasOwnProperty("firstName", "age")){
+if (sai.hasOwnProperty("firstName")){
     sai.getFirstname();
-    sai.getAge();
-
 }
+sai.getCourseCount();
+
 // sai.getFirstname();
-//sai.getAge();
 
-var akhilesh = new User("akhilesh", "P", 5, 23);
+var akhilesh = new User("akhilesh", "P", 5);
 
-if (akhilesh.hasOwnProperty("firstName", "age")){
+if (akhilesh.hasOwnProperty("firstName")){
     akhilesh.getFirstname();
-    akhilesh.getAge();
 }
+akhilesh.getCourseCount();

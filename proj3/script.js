@@ -28,13 +28,13 @@ function generateList(){
     ul.innerHTML = "";
     courses.forEach((course) => {
         const li = document.createElement("li");
-        li.classList.add("m-1", "bg-white", "rounded-xl", "py-2", "px-4","bg-white", "text-2xl" ,"flex", "justify-between");
+        li.classList.add("m-1", "bg-white", "rounded-xl", "py-2", "px-2","bg-white", "text-2xl" ,"flex", "justify-between");
 
         const name = document.createTextNode(course.name);
         li.appendChild(name);
 
         const span = document.createElement("span");
-        span.classList.add("py-4", "px-4", "text-2xl");
+        span.classList.add("py-2", "px-2", "text-2xl");
         const price = document.createTextNode("$ " + course.price);
         span.appendChild(price);
 

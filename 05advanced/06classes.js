@@ -3,20 +3,22 @@ class User{
         this.name = name;
         this.email = email;
     };
-    #courseList = [];    //When we put a "#" hashtag before any property it becomes private and we cant access outside of the class.
+    // #courseList = [];    //When we put a "#" hashtag before any property it becomes private and we cant access outside of the class.
+
+    courseList = [];
 
     enrollCourse(name){   // In this method we are setting a value into it so it is nothing but a "Setter".
-        this.#courseList.push(name);
+        this.courseList.push(name);
     }
 
     getinfo(){            
         return {name: this.name, email: this.email}
     }
     getCourseCount(){
-        return this.#courseList.length;
+        return this.courseList.length;
     };
     getCourseList(){     // In this method we are getting some info and it is nothing but a "Getter".
-        return this.#courseList;
+        return this.courseList;
     }
     
 };

@@ -10,7 +10,7 @@ console.log(sheshu.getinfo());
 sheshu.enrollCourse("java");
 sheshu.enrollCourse("python");
 sheshu.enrollCourse("react");
-console.log(sheshu.courseList);
+console.log(sheshu.getCourseList);
 
 let courses = sheshu.courseList;
 

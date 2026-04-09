@@ -20,6 +20,9 @@ class User{
     getCourseList(){     // In this method we are getting some info and it is nothing but a "Getter".
         return this.courseList;
     }
+    login(){
+        console.log("You are logged in");
+    }
     
 };
 
@@ -29,5 +32,5 @@ module.exports =  User;
 const rock = new User("rock", "rock@mail.com");
 
 rock.enrollCourse("java bootcamp");
-console.log(rock.getCourseList());
-console.log(rock.courseList);
+// console.log(rock.getCourseList());
+// console.log(rock.courseList);

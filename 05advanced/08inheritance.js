@@ -9,7 +9,12 @@ class subAdmin extends User{       // "extends" Keyword establishes the parent-c
         super.login();
         console.log("You are a subAdmin");
     }
+    static hello(){                 //"static" used to defines methods or properties that are belongs to its class, not its instances
+        console.log("Hello dear!");
+    }
 };
+
+subAdmin.hello();  //static methods or properties can be accessed by using the class name and are useful for shared or utility logic.
 
 let sooraj = new subAdmin("sooraj", "sooraj@gmail.com", 23);
 

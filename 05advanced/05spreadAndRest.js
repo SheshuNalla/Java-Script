@@ -3,6 +3,7 @@ function sumOne(a, b, c){
 }
 
 var myArr = [5, 4, 1];
+console.log(...myArr);
 console.log(sumOne(...myArr));    //Spread Operator: takes an array of values and seperates them and passes as an individual values.
                                       // Opposite eachother.
                                

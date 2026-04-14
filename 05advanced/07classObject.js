@@ -10,10 +10,10 @@ console.log(sheshu.getinfo());
 sheshu.enrollCourse("java");
 sheshu.enrollCourse("python");
 sheshu.enrollCourse("react");
-console.log(sheshu.getCourseList);
+console.log(sheshu.getCourseList());
 
 let courses = sheshu.courseList;
 
-courses.forEach((c) => console.log(c));
+courses.forEach((c) => console.log(`${c} course`));
 
 console.log(sheshu.getCourseCount());

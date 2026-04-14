@@ -6,6 +6,7 @@ myMap.set(3,"tres");
 myMap.set(4,"cuatro");
 
 console.log(myMap);
+console.log(myMap.get(1));
 
 // for(let key of myMap.keys()){
 //     console.log(`key is ${key}`);
@@ -19,7 +20,7 @@ for(let [key, value] of myMap){                   //"for of" loop is always give
     console.log(`key is: ${key} and value is: ${value}`); // it is just iterating through the things.
 };
 
-myMap.forEach( (v, k) => console.log(`value is ${v} and key is ${k}`));  //"forEach" method gives values first and then gives the keys.
+myMap.forEach( (v, k) => console.log(`value is: ${v} and key is: ${k}`));  //"forEach" method gives values first and then gives the keys.
                                                                         // it is for some operation with the values not with the indexes.
                                                                         // in "Maps" keys are considered as indexes.
 

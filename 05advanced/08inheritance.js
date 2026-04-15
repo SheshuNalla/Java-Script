@@ -10,7 +10,7 @@ class subAdmin extends User{       // "extends" Keyword establishes the parent-c
         console.log("You are a subAdmin");
     }
     static hello(){                 //"static" used to defines methods or properties that are belongs to its class, not its instances
-        console.log("Hello dear!");
+        console.log("Hello dear!"); // Not availabe to its instances but inherited by the subclasses/childclasses.
     }
 };
 

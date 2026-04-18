@@ -4,16 +4,15 @@ const one = () => {
 
 const two = () => {
     setTimeout(() => {
-        console.log("Timeout");
+        console.log("Iam the 2");
     },3000)
-    console.log("Iam the 2");
+    
 }
 
 const three = () => {
     console.log("Iam the 3");
 }
 
-
+one();
 two();
 three();
-one();

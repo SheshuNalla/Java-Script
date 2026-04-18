@@ -2,11 +2,6 @@ const one = () => {
     return "Iam the 1";
 }
 
-// const two = () => {
-//     setTimeout(() => {
-//         return "Timeout";
-//     },3000)
-// }
 
 const two = () => {
     return new Promise((resolve, reject) => {    //promise constructor 
@@ -22,11 +17,11 @@ const three = () => {
 };
 
 
-const callMe = async() => {    // async keyword makes the whole method asynchronous
+const callMe = async() => {    // async keyword makes the function return a promise automatically and allows you to use await inside it.
     valOne = one();
     console.log(valOne);
 
-    valTwo = await two();     // await keyword makes js engine to wait untill the promise is settled
+    valTwo = await two();     // await keyword makes execution to wait untill its completion of execution of method two.
     console.log(valTwo);
 
     valThree = three();

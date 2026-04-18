@@ -17,7 +17,7 @@ class subAdmin extends User{       // "extends" Keyword establishes the parent-c
 subAdmin.hello();  //static methods or properties can be accessed by using the class name and are useful for shared or utility logic.
 
 let sooraj = new subAdmin("sooraj", "sooraj@gmail.com", 23);
-sooraj.enrollCourse("python");
-console.log(sooraj.getCourseList());
+sooraj.enrollCourse("python");      //inherited method
+console.log(sooraj.getCourseList()); // inherited method
 // console.log(sooraj);
-sooraj.login();
+sooraj.login();   // own method

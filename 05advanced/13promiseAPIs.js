@@ -10,6 +10,7 @@ const p3 = new Promise((resolve, reject) => {
     setTimeout(() => {reject("p3 success")}, 2000);
 });
 
+//PromiseAPI's: 1.Promise.all, 2.Promise.allSettled, 3.Promise.race, 4.Promise.any
 
 
 Promise.any([p1, p2, p3]).then((result) => {

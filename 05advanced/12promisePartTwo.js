@@ -1,5 +1,7 @@
 const cart = ["pants", "kurtas", "shoes"];
 
+// Consumer part
+
 createOrder(cart)
 .then(function(orderId){
     console.log(orderId);
@@ -7,17 +9,17 @@ createOrder(cart)
 })
 
 .then(function(orderId){
-    return proceedToPayment(orderId);
+    return proceedToPayment(orderId);          // Promise Chaining 
 })
 .then(function(paymentInfo){
     console.log(paymentInfo);
     
 })
-.catch(function(err){
+.catch(function(err){           // Exception Handling
     console.log(err.message)
 });
 
-//Producer
+//Producer part
 
 function createOrder(){
 
@@ -43,11 +45,11 @@ function createOrder(){
 }
 
 function proceedToPayment(orderId){
-    return new Promise(function(resolve, reject){
+    return new Promise(function(resolve, reject){   //Creating a promise
         resolve("payment successfull")
     })
 }
 
 function validateCart(cart){
-    return false;
+    return true;
 }
